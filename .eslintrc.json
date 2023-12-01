@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["eslint:recommended", "next/babel", "next/core-web-vitals", "next"],
+  "rules": {
+    "react/prop-types": "on",
+    "no-unused-vars": "warn"
+  }
 }

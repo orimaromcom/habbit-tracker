@@ -1,0 +1,27 @@
+:root {
+  --bg: #ffffff;
+  --bgSoft: #faf8f7;
+  --menuSoft: #f7e9e3;
+  --coloredText: #dc4c3e;
+  --coloredTextSoft: #df8d86;
+  --text: #000;
+  --textSoft: #605c5c;
+  --containerHover: #f6efee;
+  --containerActive: #fee6e3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--textSoft);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
