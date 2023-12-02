@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
-import "./ui/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./ui/globals.css";
 
 export const metadata = {
   title: "Ori Admin Dashboard",
@@ -11,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
