@@ -6,6 +6,16 @@ import Rightbar from "../ui/dashboard/rightbar/rightbar";
 import Transactions from "../ui/transactions/transactions";
 
 const Dashboard = () => {
+  async function getPosts() {
+    const res = await fetch(`${process.env.BASE_URL}/api/getPosts`);
+    if (!res.ok) {
+      console.log(res);
+    }
+    return console.log("hello your json");
+  }
+
+  const data = getPosts();
+  console.log(data);
   return (
     <div className={styles.wrapper}>
       <div className={styles.main}>
