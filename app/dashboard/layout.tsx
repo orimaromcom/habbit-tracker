@@ -9,7 +9,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className={styles.container}>
+    <div suppressHydrationWarning className={styles.container}>
       <div className={styles.menu}>
         <Sidebar />
       </div>

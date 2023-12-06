@@ -1,0 +1,59 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  display: flex;
+  justify-content: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.detail {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.positive {
+  color: #00ff00;
+}
+
+.progress {
+  color:#ffff00;
+}
+
+.negative {
+  color: #ff0000;
+}
+
+.featuredChart {
+  width: 100px;
+  height: 100px;
+}
+
+.featuredChart :hover {
+  background-color: var(--containerHover);
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  user-select: none;
+}
+
+.textColor {
+  color: var(--textSoft);
+}

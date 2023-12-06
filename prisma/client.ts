@@ -1,17 +1,13 @@
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({
+  log: ['info'],
+});
 
 async function main() {
-  const testPost = await prisma.post.create({
-    data: {
-      id: 1,
-      title: "first test",
-      content: "another field",
-      published: true,
-    },
-  });
-  console.log(testPost);
+  const habit = await prisma.habit.findMany();
+
+  console.log(habit);
 }
 
 main()
